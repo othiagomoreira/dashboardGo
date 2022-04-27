@@ -1,7 +1,8 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Button, Flex } from '@chakra-ui/react';
+import { Input } from '../components/Form/Input';
 
-const Home: NextPage = () => {
+const SignIn = () => {
   return (
     <>
       <Head>
@@ -10,9 +11,27 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Wello World!!</h1>
+      <Flex h="100vh" align="center" justify="center">
+        <Flex
+          as="form"
+          w="100%"
+          maxW={360}
+          bg="gray.800"
+          p="8"
+          borderRadius={4}
+          flexDir="column"
+          gap="4"
+        >
+          <Input name="email" type="email" label="E-mail" />
+          <Input name="password" type="password" label="Password" />
+
+          <Button type="submit" mt="4" colorScheme="pink" size="lg">
+            Entrar
+          </Button>
+        </Flex>
+      </Flex>
     </>
   );
 };
 
-export default Home;
+export default SignIn;
