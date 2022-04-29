@@ -7,8 +7,6 @@ const SignIn = () => {
     <>
       <Head>
         <title>Dashgo</title>
-        <meta name="description" content="Dashboard" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Flex h="100vh" align="center" justify="center">
