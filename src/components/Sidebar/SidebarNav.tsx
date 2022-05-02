@@ -20,7 +20,7 @@ export const SidebarNav = () => {
         </NavLink>
       </NavSection>
 
-      <NavSection title="GERAL">
+      <NavSection title="AUTOMAÇÃO">
         <NavLink icon={RiInputMethodLine} href="/formularios">
           Formulários
         </NavLink>
